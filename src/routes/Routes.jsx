@@ -10,6 +10,7 @@ import BugsPage from '../App/component/BugsPage'
 import CodeSmellsPage from '../App/component/CodeSmellsPage'
 import DuplicationsPage from '../App/component/DuplicationsPage'
 import PullRequestsPage from '../App/component/PullRequestsPage'
+import ContributionsPage from '../App/component/ContributionsPage'
 
 const routes = [
   {path: "/", redirect: true, to:"/select"},
@@ -25,6 +26,7 @@ const routes = [
   {path: "/code_smells", component: CodeSmellsPage, loginRequired: true},
   {path: "/duplications", component: DuplicationsPage, loginRequired: true},
   {path: "/pull-requests", component: PullRequestsPage, loginRequired: true},
+  {path: "/contributions", component: ContributionsPage, loginRequired: true},
 ]
 
 export default routes

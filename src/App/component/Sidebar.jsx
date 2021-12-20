@@ -260,6 +260,18 @@ function Sidebar(prop) {
                         </ListItemIcon>
                         <ListItemText primary="Pull Request" />
                       </MenuItem>
+                      <MenuItem
+                        button
+                        className={classes.nested}
+                        onClick={goToContribution}
+                        selected={pathName.includes("contributions")}
+                      >
+                        <ListItemIcon>
+                          <GoGitPullRequest />
+                        </ListItemIcon>
+                        <ListItemText primary="Contributions" />
+                      </MenuItem>
+					  
                     </List>
                   </Collapse>
                 </div>
@@ -355,6 +367,10 @@ function Sidebar(prop) {
 
   const goToPullRequest = () => {
     history.push("/pull-requests");
+  };
+
+  const goToContribution = () => {
+    history.push("/contributions");
   };
 
   const goToCodeCoverage = () => {
